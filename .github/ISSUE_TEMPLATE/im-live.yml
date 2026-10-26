@@ -6,32 +6,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Title:** `I'm in: your-handle`. Use first names or roles only, no surnames.
+        **Title:** Write your handle after `I'm in: `. Fill in two boxes, tick one, and click **Create**.
   - type: textarea
     id: what
     attributes:
-      label: "💡 My idea: what is it?"
-      description: One or two sentences. It's fine if it changes later.
-    validations:
-      required: true
-  - type: input
-    id: who
-    attributes:
-      label: Who is it for?
-      placeholder: "Surfers in Dominical, my little sister, the farmers at the feria..."
+      label: "💡 What's your idea?"
+      description: One or two sentences. No idea yet? Write "Still deciding" and a problem you've noticed. It can change later.
     validations:
       required: true
   - type: textarea
-    id: problem
+    id: who
     attributes:
-      label: What is their problem?
-    validations:
-      required: true
-  - type: input
-    id: person
-    attributes:
-      label: One person I can talk to about it
-      description: A first name or a role only, like "my uncle who fishes in Uvita".
+      label: Who is it for, and what problem does it solve for them?
+      description: First names or roles only, like "surfers in Dominical" or "my uncle who fishes in Uvita".
     validations:
       required: true
   - type: checkboxes
@@ -39,14 +26,10 @@ body:
     attributes:
       label: My tools
       options:
-        - label: VS Code and Git are installed, and `git --version` works (or I use Codespaces)
+        - label: VS Code and Git are installed (Steps 4–6)
           required: true
   - type: input
     id: link
     attributes:
       label: "🎁 My live website (optional)"
       placeholder: https://your-handle.github.io/hello-osa
-  - type: textarea
-    id: about
-    attributes:
-      label: One sentence about me (optional)
